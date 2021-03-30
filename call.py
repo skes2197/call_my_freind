@@ -9,7 +9,7 @@ print("how many seconds?")
 k = int(input())
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login("skes2197@gmail.com", "skes2197/githube")
+s.login("skes2197@gmail.com", "payload2 = {'st.r.fieldAcceptCallUIButton': 'Call'}")
 message = "calling " +"+"+str(i) + " pour la " + str(v+1) + "eme fois sur "+str(j)+" pour un laps de"+str(k)+" seconds"
 s = requests.session()
 payload = {'st.r.phone': i}
