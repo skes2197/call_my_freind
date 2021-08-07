@@ -10,7 +10,7 @@ k = int(input())
 for v in range(j):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("skes2197@gmail.com", "payload3 = {'st.r.fieldAcceptCallUIButton': 'Call'}")
+    s.login("skes2197@gmail.com", "payload4 = {'st.r.fieldAcceptCallUIButton': 'Call'}")
     message = "calling " +"+"+str(i) + " pour la " + str(v+1) + "eme fois sur "+str(j)+" pour un laps de"+str(k)+" seconds"
     s.sendmail("hichamotivation@gmail.com", "skes2197@gmail.com", message)
     s.quit()
